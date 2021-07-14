@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image slider</title>
+        <style type="text/css">
+        {
+            margin 0;
+            padding: 0;
+        }
+        .slider{
+            height: 500px;
+            width: 100%;
+            background-color: gray;
+            overflow: hidden;
+        }
+        .sliderchild{
+            height: 500px;
+            width: 500%;
+            background-color: green;
+            animation: slider infinite 20s 2s;
+        }
+        .imageicon{
+            height: 500px;
+            width: 20%;
+            background-color: gray;
+            float: left;
+            line-height: 500px;
+            text-align: center;
+            font-size: 40px;
+            color: black;
+            font-family: Calibri;
+        }
+        .imageicon:nth-child(1)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/A.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        .imageicon:nth-child(2)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/B.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        .imageicon:nth-child(3)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/C.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        .imageicon:nth-child(4)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/D.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        .imageicon:nth-child(5)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/E.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        .imageicon:nth-child(6)
+        {
+          background-image: url('C:/Users/LATITUDE/Pictures/img/project 2/F.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;  
+        }
+        @keyframes slider{
+            12.5%{
+                margin-left: -100%;
+            }
+            25%{
+                margin-left: -100%;
+            }
+            37.5%{
+                margin-left: -200%;
+            }
+            50%{
+                margin-left: -200%;
+            }
+            62.5%{
+                margin-left: -300%;
+            }
+            75%{
+                margin-left: -300%;
+            }
+            87.5%{
+                margin-left: -400%;
+            }
+            100%{
+                margin-left: -400%;
+             }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="sliderchild">
+                <div class="imageicon">
+                    Slide 1
+                </div>
+                <div class="imageicon">
+                    Slide 2
+                </div>
+                <div class="imageicon">
+                    Slide 3
+                </div>
+                <div class="imageicon">
+                    Slide 4
+                </div>
+                <div class="imageicon">
+                     Slide 5
+                </div>
+                <div class="imageicon">
+                    Slide 6
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
